@@ -98,7 +98,6 @@
     font-size: 20px;
     margin-bottom: 6px;
     max-width: 288px;
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
@@ -107,7 +106,6 @@
   .profile__description {
     margin-bottom: 32px;
     max-width: 288px;
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-line-clamp: 3;
