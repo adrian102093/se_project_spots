@@ -20,4 +20,9 @@ This responsive mock web application enables users to create personal profiles a
 ## Deployment
 
 This webpage is deployed to GitHub pages
--depoyment link : git@github.com:adrian102093/se_project_spots.git
+-depoyment link : https://adrian102093.github.io/se_project_spots/
+
+## Video link
+
+This webpage is explained on youtube:
+youtube link: https://youtu.be/hUpMCoYrajo
