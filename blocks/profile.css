@@ -53,8 +53,13 @@
   display: flex;
   cursor: pointer;
   padding: 0;
-  opacity: 40%;
+  opacity: 70%;
   transition: opacity 0.3s ease;
+  display: flex;
+  gap: 8px;
+  color: #212121;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 500;
 }
 .profile__edit-btn:hover {
   opacity: 100%;
