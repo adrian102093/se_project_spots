@@ -1,28 +1,25 @@
 // Select elements for Edit Profile modal
 const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileCloseButton =
-  editProfileModal.querySelector(".modal__close-btn");
+const editProfileCloseButton = editProfileModal.querySelector(
+  ".modal__close-button"
+);
 
 // Select elements for New Post modal
-const newPostBtn = document.querySelector(".profile__new-post-btn"); // <-- update selector to your actual button
-const newPostModal = document.querySelector("#new-post-modal"); // <-- make sure this matches your HTML id
-const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+const newPostBtn = document.querySelector(".profile__add-btn"); // matches your HTML
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-button");
+
+// Helpers
+const openModal = (m) => m.classList.add("modal_is-opened");
+const closeModal = (m) => m.classList.remove("modal_is-opened");
 
 // Open/close Edit Profile modal
-editProfileBtn.addEventListener("click", function () {
-  editProfileModal.classList.add("modal_is-opened");
-});
-
-editProfileCloseButton.addEventListener("click", function () {
-  editProfileModal.classList.remove("modal_is-opened");
-});
+editProfileBtn.addEventListener("click", () => openModal(editProfileModal));
+editProfileCloseButton.addEventListener("click", () =>
+  closeModal(editProfileModal)
+);
 
 // Open/close New Post modal
-newPostBtn.addEventListener("click", function () {
-  newPostModal.classList.add("modal_is-opened");
-});
-
-newPostCloseBtn.addEventListener("click", function () {
-  newPostModal.classList.remove("modal_is-opened");
-});
+newPostBtn.addEventListener("click", () => openModal(newPostModal));
+newPostCloseBtn.addEventListener("click", () => closeModal(newPostModal));
